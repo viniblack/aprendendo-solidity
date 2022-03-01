@@ -1,7 +1,7 @@
 pragma solidity ^0.8.0;
 
 contract meucontrato {
-    uint minhaIdade = -21;
+    uint minhaIdade;
     string nome;
     address carteira;
     bool estaAtivo;
@@ -13,7 +13,7 @@ contract meucontrato {
     string[] clientes;
     address[] carteiras;
 
-    mapping(address => uint) saldos;
+    mapping(address => uint) saldo;
 
     struct Usuario{
         uint id;
